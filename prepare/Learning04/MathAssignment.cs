@@ -1,0 +1,17 @@
+class MathAssignment : Assignment
+{
+    // attributes
+    private string _textbookSection;
+    private string _problems;
+
+    // behaviors
+    public MathAssignment(string name, string topic, string section, string problems) : base(name, topic)
+    {
+        _textbookSection = section;
+        _problems = problems;
+    }
+    public string GetHomeworkList()
+    {
+        return _textbookSection + " " + _problems;
+    }
+}
